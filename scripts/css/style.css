@@ -1,1 +1,9 @@
-
+td{
+   left: 5px;
+   padding: 15px;
+   text-align: center;
+}
+tr{
+   left: 5px;
+   padding: 5px; 
+}

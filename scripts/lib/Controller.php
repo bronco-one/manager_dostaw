@@ -8,7 +8,7 @@ abstract class Controller {
 	
 	$path ='models/'.$name.'_model.php';
 	if (file_exists($path)) {
-		require_once("models/$name_model.php");
+		require_once("models/".$name."_model.php");
 		$modelName = ucfirst($name)."_Model";
 		$this->model = new $modelName();
 	}
