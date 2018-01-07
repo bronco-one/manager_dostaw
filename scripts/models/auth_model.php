@@ -8,12 +8,12 @@ class Auth_Model extends Model{
         parent::__construct();
     }
     public function Login($user,$pass){
-       $sql ="SELECT * FROM users WHERE username = :user AND password= :pass";
+       $sql ="SELECT * FROM uzytkownicy WHERE login = :user AND haslo= :pass";
        $stmt = $this->db->prepare($sql) ;
        $stmt->bindValue(':user',$user);
        $stmt->bindValue(':pass', md5($pass.$this->salt));
-       $user=$stmt->execute();
-       if ($user >0) {
+       $users = $stmt->execute();
+       if ($users >0) {
            $stmt->close();
            return TRUE;
        } else {
