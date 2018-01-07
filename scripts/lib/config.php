@@ -5,6 +5,6 @@ define('DB_VENDOR','mysql');
 define('DB_HOST','localhost');
 define('DB_NAME','hurtownia');
 define('DB_USR','bronco');
-define('DB_PWD', 'pingwin');
+define('DB_PWD', 'pingwin67A');
 
 
