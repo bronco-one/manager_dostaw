@@ -1,6 +1,6 @@
 <?php
 
-class Auth extends Model{
+class Auth_Model extends Model{
     
     private $salt='851a27f3e9b33b77ff0415ef29f40f49';
     
