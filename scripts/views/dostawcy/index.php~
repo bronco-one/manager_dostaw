@@ -1,6 +1,4 @@
-<h3>Spis Dostawców</h3>
 <div id="dostawcy">
-    
     <table class="table table-striped table-bordered ">
         
         <tr class="active">
