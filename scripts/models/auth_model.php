@@ -7,7 +7,7 @@ class Auth_Model extends Model{
     public function __construct() {
         parent::__construct();
     }
-    public function Login($user,$pass){
+    public function login($user,$pass){
        $sql ="SELECT * FROM uzytkownicy WHERE login = :user AND haslo= :pass";
        $stmt = $this->db->prepare($sql) ;
        $stmt->bindValue(':user',$user);
@@ -21,6 +21,17 @@ class Auth_Model extends Model{
            return FALSE;
        }
     
+}
+public function loginOn() {
+    if (isset($_SESSION['loggedin'])) {
+        return TRUE;
+    } else {
+        return FALSE;
+    }
+}
+public function loginOut() {
+    session_destroy();
+    session_start();
 }
 }
 
