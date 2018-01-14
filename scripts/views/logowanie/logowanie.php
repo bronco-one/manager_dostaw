@@ -1,13 +1,14 @@
 <h3>Logowanie</h3>
 
-<form action="" method="post">
+<p><?php echo $this->message; ?></p>
+<form action="logowanie" method="post">
     <p>
         <label>Login</label>
-        <input type="text" name="user" value="<?php echo $this->getData('user'); ?>"/>
+        <input type="text" name="user" placeholder="Wpisz login"/>
     </p> 
     <p>
         <label>Hasło</label>
-        <input type="password" name="pass" value="<?php echo $this->getData('pass'); ?>"/>
+        <input type="password" name="pass" placeholder="Wpisz hasło"/>
     </p>
     <p>
         <input type="submit" name="submit" value="Zaloguj"/>

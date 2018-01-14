@@ -14,24 +14,16 @@ class Auth_Model extends Model{
        $stmt->bindValue(':pass', md5($pass.$this->salt));
        $users = $stmt->execute();
        if ($users >0) {
+           Session::set('loggedin', true);
+           Session::set('user', $users['user']);
            $stmt->close();
-           return TRUE;
+           
        } else {
+           header('Location:'. BASE_URL.'logowanie/logowanie?message='.urlencode('Błąd logowania'));
            $stmt->close();
-           return FALSE;
+           
        }
     
-}
-public function loginOn() {
-    if (isset($_SESSION['loggedin'])) {
-        return TRUE;
-    } else {
-        return FALSE;
-    }
-}
-public function loginOut() {
-    session_destroy();
-    session_start();
 }
 }
 

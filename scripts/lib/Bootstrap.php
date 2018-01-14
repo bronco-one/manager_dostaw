@@ -5,8 +5,8 @@ class Bootstrap{
 	$url = $_GET['url'];
 	$url = explode("/",$url);
 		if (empty($url[0])) {
-			require_once("controllers/hurtownia.php");
-			(new Hurtownia())->index();
+			require_once("controllers/logowanie.php");
+			(new Logowanie())->index();
 			return false;
 			
 		}
