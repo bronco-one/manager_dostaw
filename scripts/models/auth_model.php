@@ -11,12 +11,14 @@ class Auth_Model extends Model{
        $sql ="SELECT * FROM uzytkownicy WHERE login = :user AND haslo= :pass";
        $stmt = $this->db->prepare($sql) ;
        $stmt->bindValue(':user',$user);
-       $stmt->bindValue(':pass', md5($pass.$this->salt));
+       $stmt->bindValue(':pass', md5($pass));
        $users = $stmt->execute();
-       if ($users >0) {
+       $num = $stmt->rowCount();
+       if ($num >0) {
            Session::set('loggedin', true);
            Session::set('user', $users['user']);
-           $stmt->close();
+           header('Location:/dostawcy/index');
+           //$stmt->close();
            
        } else {
            header('Location:'. BASE_URL.'logowanie/logowanie?message='.urlencode('Błąd logowania'));

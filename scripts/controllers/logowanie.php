@@ -5,18 +5,18 @@ class Logowanie extends Controller {
     public function __construct() {
         parent::__construct();
         Session::init();
-        $this->loadModel("auth");
+        $this->loadModel('auth');
         
         
-        $alert = new Alerts();
+        //$alert = new Alerts();
         
         
         
             
         }
         public function index() {
-         $username = Session::get('username');
-         $this->view->username = $username?$username:'';
+         $user = Session::get('user');
+         $this->view->user = $user?$user:'';
          $this->view->message = isset($_GET['message'])?$_GET['message']:'';
          $this->view->render("logowanie/logowanie");   
         }
@@ -27,6 +27,10 @@ class Logowanie extends Controller {
             $this->model->login($user,$pass);
             
             
+        }
+        public function logout() {
+           Session::destroy();
+           $this->view->render("logowanie/logowanie");
         }
    
     }
