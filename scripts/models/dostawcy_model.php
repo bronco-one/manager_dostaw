@@ -11,7 +11,7 @@ class Dostawcy_Model extends Model{
     public function addDostawcy($Dostawca) {
         krsort($Dostawca);
         $columns = implode(',', array_keys($Dostawca));
-        $values = ':'.implode(', :', array_keys($Dostawca));
+        $values = ':' .implode(', :', array_keys($Dostawca));
         $stmt = $this->db->prepare("INSERT INTO dostawcy($columns) VALUES($values);");
         foreach ($Dostawca as $key => $value) {
             $stmt->bindValue(":$key", $value);

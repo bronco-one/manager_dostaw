@@ -7,7 +7,7 @@
 <form  class="form-group" action="/dostawcy/add" method="post">
     <div class="form-group">
         <label>Nazwa</label><br/>
-        <input type="text" name="nazwa" placeholder="Wpisz nazwę dostawcy"/>
+        <input type="text" name="nazwa_dost" placeholder="Wpisz nazwę dostawcy"/>
     </div> 
     <div class="form-group">
         <label>Miasto</label><br/>
@@ -15,7 +15,7 @@
     </div>
     <div class="form-group">
         <label>Adres</label><br/>
-        <input type="text" name="adres" placeholder="Wpisz adres: ulicę, nr"/>
+        <input type="text" name="adres_ul" placeholder="Wpisz adres: ulicę, nr"/>
     </div>
     <div class="form-group">
         <label>E-mail</label><br/>
@@ -23,7 +23,7 @@
     </div>
     <div class="form-group">
         <label>Telefon</label><br/>
-        <input required type="tel" name="" placeholder="Wpisz numer telefonu"/>
+        <input required type="tel" name="telefon" placeholder="Wpisz numer telefonu"/>
     </div>
     <div class="form-group">
         <label>Osoba do kontaktu</label><br/>
