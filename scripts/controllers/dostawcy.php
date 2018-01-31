@@ -38,6 +38,13 @@ class Dostawcy extends Controller {
         }
         $this->view->render('dostawcy/update');
     }
+    public function delete() {
+        if (isset($_POST['submit'])) {
+            unset($_POST['submit']);
+            $this->view->id = $this->model->deleteDostawca($_POST);
+        }
+        
+    }
 
 }
 

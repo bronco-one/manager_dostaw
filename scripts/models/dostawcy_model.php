@@ -42,7 +42,10 @@ class Dostawcy_Model extends Model{
       
     }
     public function deleteDostawca($id) {
-        
+      $stmt = $this->db->prepare("DELETE FROM dostawcy WHERE id_dostawcy =:id LIMIT 1");
+      if($stmt->execute(['id'=>(int)$id])){
+          header('Location:/dostawcy/index');
+      }  
     }
 }
 

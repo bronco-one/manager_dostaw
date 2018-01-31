@@ -11,6 +11,7 @@
 <th>Telefon</th>
 <th>Kontakt</th>
 <th>Akcja</th>
+<th>Akcja</th>
 </tr>
         
 <?php foreach($this->dostawcy as $dostawca): ?>
@@ -26,6 +27,14 @@
         <input type="hidden" name="id" value="<?= $dostawca['id_dostawcy']?>"/>
         <button type="submit" name="submit" class="btn btn-secondary">
         Aktualizuj
+    </button>
+    </form>
+</td>
+<td>
+    <form action="/dostawcy/delete" method="post">
+        <input type="hidden" name="id" value="<?= $dostawca['id_dostawcy']?>"/>
+        <button type="submit" name="submit" class="btn btn-secondary">
+        Usuń
     </button>
     </form>
 </td>
