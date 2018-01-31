@@ -25,6 +25,19 @@ class Dostawcy extends Controller {
         }
         $this->view->render('dostawcy/add');
     }
+    public function updateView() {
+        $id = $_POST['id'];
+       
+        $this->view->dostawcy = $this->model->viewDostawca($id);
+        $this->view->render('dostawcy/update'); 
+    }
+    public function update() {
+        if (isset($_POST['submit'])) {
+            unset($_POST['submit']);
+            $this->view->id = $this->model->updateDostawca($_POST);
+        }
+        $this->view->render('dostawcy/update');
+    }
 
 }
 

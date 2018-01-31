@@ -10,6 +10,7 @@
 <th>E-mail</th>
 <th>Telefon</th>
 <th>Kontakt</th>
+<th>Akcja</th>
 </tr>
         
 <?php foreach($this->dostawcy as $dostawca): ?>
@@ -20,6 +21,14 @@
 <td><?= $dostawca['email']?></td>
 <td><?= $dostawca['telefon']?></td>
 <td><?= $dostawca['os_do_kontaktu']?></td>
+<td>
+    <form action="/dostawcy/updateView" method="post">
+        <input type="hidden" name="id" value="<?= $dostawca['id_dostawcy']?>"/>
+        <button type="submit" name="submit" class="btn btn-secondary">
+        Aktualizuj
+    </button>
+    </form>
+</td>
 </tr>
 <?php endforeach; ?>
 </table>
