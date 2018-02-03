@@ -1,5 +1,5 @@
 <div class="page-header">
-<h3 class="text-info">Spis miar</h3>
+<h3 class="text-info">Spis jednostek miar</h3>
 </div> 
 <div id="dostawcy">
     

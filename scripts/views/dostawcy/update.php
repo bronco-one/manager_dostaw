@@ -1,7 +1,9 @@
-<h3>Aktualizuj dostawcę</h3>
+<div class="page-header">
+<h3 class="text-info">Aktualizuj dostawcę</h3>
+</div>
 <div id="Dostawcy">
 <p><?php if (isset($this->id)) {
-    echo 'Dodano nowy rekord';
+    echo 'Rekord zaktualizowano';
 } ?></p>
 
 <?php foreach ($this->dostawcy as $dostawcy): ?>

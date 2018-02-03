@@ -89,7 +89,7 @@
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
                         <a class="dropdown-item" href="#">Ustaw Alert</a>
                         <a class="dropdown-item" href="/miary/index">Pokaż jednostki miar</a>
-                        <a class="dropdown-item" href="#">Ustaw jednostkę miary</a>
+                        <a class="dropdown-item" href="/miary/add">Dodaj jednostkę miary</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
