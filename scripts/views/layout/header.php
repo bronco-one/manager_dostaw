@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" 
       integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" 
       crossorigin="anonymous">
-<link rel="stylesheet" href="/css/style.css">
+<link type="text/css" rel="stylesheet" href="<?=BASE_URL;?>/css/style.css">
 <title></title>
 <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -42,7 +42,7 @@
 </head>
 <body>
       <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">System Zarządzania</a>
+        <a class="navbar-brand" href="#">System Zarządzania Dostawami</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -71,9 +71,9 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Asortyment</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="/dostawcy/index">Spis</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="/dostawcy/index">Stan magazynu</a>
+                        <a class="dropdown-item" href="#">Dodaj rodzaj asortymentu</a>
+                        <a class="dropdown-item" href="#">Dodaj produkt</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -84,11 +84,19 @@
                         <a class="dropdown-item" href="#">Something else here</a>
                     </div>
                 </li>
-                <li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inne</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">Ustaw Alert</a>
+                        <a class="dropdown-item" href="/miary/index">Pokaż jednostki miar</a>
+                        <a class="dropdown-item" href="#">Ustaw jednostkę miary</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
                  <?php if(Session::get("loggedin")): ?>
-<?= Session::get("user")." | "?>
-<a href="logowanie/logout">Wyloguj</a>
-<?php endif;?>   
+                 <?= Session::get("user")." | "?>
+                 <a href="logowanie/logout">Wyloguj</a>
+                 <?php endif;?>   
                 </li>
             </ul>
             

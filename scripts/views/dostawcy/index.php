@@ -1,4 +1,6 @@
-<h3>Spis Dostawców</h3>
+<div class="page-header">
+<h3 class="text-info">Spis Dostawców</h3>
+</div> 
 <div id="dostawcy">
     
     <table class="table table-striped table-bordered ">
@@ -13,7 +15,7 @@
 <th>Akcja</th>
 <th>Akcja</th>
 </tr>
-        
+   
 <?php foreach($this->dostawcy as $dostawca): ?>
 <tr class="active">
 <td><?= $dostawca['nazwa_dost']?></td>

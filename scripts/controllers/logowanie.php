@@ -7,13 +7,8 @@ class Logowanie extends Controller {
         Session::init();
         $this->loadModel('auth');
         
-        
-        //$alert = new Alerts();
-        
-        
-        
-            
         }
+        
         public function index() {
          $user = Session::get('user');
          $this->view->user = $user?$user:'';
