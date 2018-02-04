@@ -71,7 +71,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Asortyment</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="/dostawcy/index">Stan magazynu</a>
+                        <a class="dropdown-item" href="/artykuly/index">Spis artykułów</a>
                         <a class="dropdown-item" href="/gatunekTowaru/index">Spis rodzaj asortymentu</a>
                         <a class="dropdown-item" href="/gatunekTowaru/add">Dodaj gatunek asortymentu</a>
                         <a class="dropdown-item" href="#">Dodaj produkt</a>
