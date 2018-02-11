@@ -1,6 +1,6 @@
 
 <div>
-<footer>Stopka</footer>
+    <footer class="footer">Stopka</footer>
 </div>
 </body>
 </html>
