@@ -17,7 +17,7 @@ class Auth_Model extends Model{
        $num = $stmt->rowCount();
        if ($num >0) {
            Session::set('loggedin', true);
-           Session::set('user', $users['user']);
+           Session::set('user', $user['user']);
            header('Location:/dostawcy/index');
            //$stmt->close();
            

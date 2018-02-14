@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" 
       integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" 
       crossorigin="anonymous">
-<link type="text/css" rel="stylesheet" href="<?=BASE_URL?>/css/style.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css">
 <title></title>
 <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -96,7 +96,7 @@
                 <li class="nav-item dropdown">
                  <?php if(Session::get("loggedin")): ?>
                  <?= Session::get("user")." | "?>
-                 <a href="logowanie/logout">Wyloguj</a>
+                 <a href="../logowanie/logout">Wyloguj</a>
                  <?php endif;?>   
                 </li>
             </ul>
