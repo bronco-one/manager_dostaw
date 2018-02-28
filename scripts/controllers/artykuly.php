@@ -18,5 +18,21 @@ class Artykuly extends Controller {
             
         }
     }
+    public function add(){
+        if (Session::get('loggedin')) {
+        if (isset($_POST['submit'])) {
+            unset($_POST['submit']);
+            $this->view->id = $this->model->addArtykul($_POST);
+        }   
+        
+        $this->view->dostawcy = $this->model->viewDostawcy();
+        $this->view->gatunki = $this->model->viewGatunki();
+        $this->view->miary = $this->model->viewMiary();
+        $this->view->render('artykuly/add');
+        } else {
+            echo 'Musisz się zalogować !';
+            
+        }
+    }
 
 }

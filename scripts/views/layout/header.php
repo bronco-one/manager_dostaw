@@ -74,7 +74,7 @@
                         <a class="dropdown-item" href="/artykuly/index">Spis artykułów</a>
                         <a class="dropdown-item" href="/gatunekTowaru/index">Spis rodzaj asortymentu</a>
                         <a class="dropdown-item" href="/gatunekTowaru/add">Dodaj gatunek asortymentu</a>
-                        <a class="dropdown-item" href="#">Dodaj produkt</a>
+                        <a class="dropdown-item" href="/artykuly/add">Dodaj produkt</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
