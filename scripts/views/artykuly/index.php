@@ -1,11 +1,11 @@
 <div class="page-header">
-<h3 class="text-info">Spis artykułów</h3>
+<h3 class="text-info temat">Spis artykułów</h3>
 </div> 
 <div id="dostawcy">
     
-    <table class="table table-striped table-bordered ">
+<table class="table table-striped table-bordered ">
         
-        <tr class="active">
+<tr class="active">
 <th>Dostawca</th>
 <th>Rodzaj</th>
 <th>Nazwa</th>
@@ -25,7 +25,7 @@
 <td>
     <form action="/artykuly/updateView" method="post">
         <input type="hidden" name="id" value="<?= $artykul['id_art']?>"/>
-        <button type="submit" name="submit" class="btn btn-secondary">
+        <button type="submit" name="submit" class="btn btn-warning">
         Aktualizuj
     </button>
     </form>
@@ -33,7 +33,7 @@
 <td>
     <form action="/artykuly/delete" method="post">
         <input type="hidden" name="id" value="<?= $artykul['id_art']?>"/>
-        <button type="submit" name="submit" class="btn btn-secondary">
+        <button type="submit" name="submit" class="btn btn-danger">
         Usuń
     </button>
     </form>

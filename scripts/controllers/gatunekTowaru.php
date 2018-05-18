@@ -21,7 +21,11 @@ class GatunekTowaru extends Controller {
     public function add() {
         if (isset($_POST['submit'])) {
             unset($_POST['submit']);
+            if ($this->validate->formEmpty($_POST)) {
+                echo 'Formularz niepoprawny';
+            } else {
             $this->view->id = $this->model->addGatunek($_POST);
+             }
         }
         $this->view->render('gatunekTowaru/add');
     }

@@ -57,15 +57,13 @@
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
                         <a class="dropdown-item" href="/dostawcy/index">Spis</a>
                         <a class="dropdown-item" href="/dostawcy/add">Dodaj dostawcę</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dostawy</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="/dostawcy/index">Spis</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="/dostawy/index">Szukaj</a>
+                        <a class="dropdown-item" href="/dostawy/add">Dodaj dostawę</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">

@@ -1,5 +1,5 @@
 <div class="page-header">
-<h3 class="text-info">Spis rodzjów artykułów</h3>
+<h3 class="text-info temat">Spis rodzjów artykułów</h3>
 </div> 
 <div id="dostawcy">
     

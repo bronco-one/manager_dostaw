@@ -1,4 +1,4 @@
-<h3>Dodaj artykuł</h3>
+<h3 class="text-info temat">Dodaj artykuł</h3>
 <div id="addDostawcy">
 <p><?php if (isset($this->id)) {
     echo 'Dodano nowy rekord';
@@ -14,7 +14,7 @@
         </select>
         
     </div> 
-    <div class="form-group">
+    <div class="form-group ">
         <label>Wybierz gatunek towaru</label><br/>
         <select  name="id_gat">
         <?php foreach ($this->gatunki as $gatunek): ?>

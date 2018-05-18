@@ -1,5 +1,5 @@
 <div class="page-header">
-<h3 class="text-info">Dodaj nową jednostkę</h3>
+<h3 class="text-info temat">Dodaj nową jednostkę</h3>
 </div>
 <div id="addDostawcy">
 <p><?php if (isset($this->id)) {

@@ -8,10 +8,10 @@ tr{
    padding: 5px; 
 }
 .temat{
-    color: green;
-    margin-bottom: 60px;
-    padding: 35px;
+    
+    margin-bottom: 20px;
+    padding: 15px;
 }
 .footer{
-    color: red;
+    color: blueviolet;
 }

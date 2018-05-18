@@ -1,5 +1,5 @@
 <div class="page-header">
-<h3 class="text-info">Dodaj nowy gatunek asortymentu</h3>
+<h3 class="text-info temat">Dodaj nowy gatunek asortymentu</h3>
 </div>
 <div id="addDostawcy">
 <p><?php if (isset($this->id)) {

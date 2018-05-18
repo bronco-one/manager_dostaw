@@ -1,4 +1,4 @@
-<h3>Dodaj dostawcę</h3>
+<h3 class="text-info temat">Dodaj dostawcę</h3>
 <div id="addDostawcy">
 <p><?php if (isset($this->id)) {
     echo 'Dodano nowy rekord';
