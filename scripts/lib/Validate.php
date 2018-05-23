@@ -15,5 +15,11 @@ class Validate {
         }
         return $error;
     }
+    public function htmlTags($param) {
+        foreach ($param as $key=>$value){
+            $param[$key]= strip_tags($value);
+        }
+        return $param;
+    }
 }
 

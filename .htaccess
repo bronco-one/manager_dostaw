@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^(www\.)?hurtownia\.ma7\.eu$ [NC]
+RewriteCond %{REQUEST_FILENAME} !/scripts/
+RewriteRule ^(.*)$ /scripts/$1 [L]
