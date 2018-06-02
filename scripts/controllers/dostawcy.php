@@ -5,19 +5,19 @@ class Dostawcy extends Controller {
     public function __construct() {
         parent::__construct();
         Session::init();
+        if (Session::get('loggedin')){
         $this->loadModel("dostawcy");
+        } else {
+            header("Location: http://hurtownia.local");
+           
+        }
+        
     }
     
     public function index(){
-        if (Session::get('loggedin')) {
-            
-        
-        $this->view->dostawcy = $this->model->viewDostawcy();
-        $this->view->render('dostawcy/index');
-       } else {
-            echo 'Musisz się zalogować !';
-            
-        }
+       $this->view->dostawcy = $this->model->viewDostawcy();
+       $this->view->render('dostawcy/index');
+       
     }
     public function add() {
         if (isset($_POST['submit'])) {

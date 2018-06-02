@@ -4,19 +4,18 @@ class GatunekTowaru extends Controller {
 
     public function __construct() {
         parent::__construct();
+        if (Session::get('loggedin')){
         $this->loadModel("gatunektowaru");
+        } else {
+            header("Location: http://hurtownia.local");
+           
+        }
     }
     
     public function index(){
-        //if (Session::get('loggedin')) {
-            
-        
         $this->view->gatunki = $this->model->viewGatunki();
         $this->view->render('gatunekTowaru/index');
-       // } else {
-           // echo 'Musisz się zalogować !';
-            
-       // }
+       
     }
     public function add() {
         if (isset($_POST['submit'])) {

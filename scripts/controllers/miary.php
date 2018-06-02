@@ -4,19 +4,19 @@ class Miary extends Controller {
 
     public function __construct() {
         parent::__construct();
+        if (Session::get('loggedin')){
         $this->loadModel("miary");
+        } else {
+            header("Location: http://hurtownia.local");
+           
+        }
+        
     }
     
     public function index(){
-        //if (Session::get('loggedin')) {
-            
-        
-        $this->view->miary = $this->model->viewMiary();
+       $this->view->miary = $this->model->viewMiary();
         $this->view->render('miary/index');
-       // } else {
-           // echo 'Musisz się zalogować !';
-            
-       // }
+      
     }
     public function add() {
         if (isset($_POST['submit'])) {
