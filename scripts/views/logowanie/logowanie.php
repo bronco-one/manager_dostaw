@@ -11,7 +11,7 @@
         <input type="password" name="pass" placeholder="Wpisz hasło"/>
     </p>
     <p>
-        <input type="submit" name="submit" value="Zaloguj"/>
+        <input type="submit" name="submit" value="Zaloguj" class="btn btn-success"/>
     </p>
 </form>
 

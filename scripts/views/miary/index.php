@@ -17,7 +17,7 @@
 <td>
     <form action="/miary/updateView" method="post">
         <input type="hidden" name="id" value="<?= $miara['id_miary']?>"/>
-        <button type="submit" name="submit" class="btn btn-secondary">
+        <button type="submit" name="submit" class="btn btn-warning">
         Aktualizuj
     </button>
     </form>
@@ -25,7 +25,7 @@
 <td>
     <form action="/miary/delete" method="post">
         <input type="hidden" name="id" value="<?= $miara['id_miary']?>"/>
-        <button type="submit" name="submit" class="btn btn-secondary">
+        <button type="submit" name="submit" class="btn btn-danger">
         Usuń
     </button>
     </form>

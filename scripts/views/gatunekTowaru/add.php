@@ -11,7 +11,7 @@
         <label>Nazwa gatunku asortymentu</label><br/>
         <input type="text" name="nazwa_rodzaju" placeholder="Wpisz nazwę"/>
     </div> 
-    <button type="submit" name="submit" class="btn btn-secondary">
+    <button type="submit" name="submit" class="btn btn-success">
         Dodaj
     </button>
 </form>

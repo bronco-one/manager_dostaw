@@ -14,7 +14,7 @@
         <label>Nazwa rodzju artykułu</label><br/>
         <input type="text" name="nazwa_rodzaju" value="<?= $gat['nazwa_rodzaju']?>"/>
     </div> 
-    <button type="submit" name="submit" class="btn btn-secondary">
+    <button type="submit" name="submit" class="btn btn-success">
         Aktualizuj
     </button>
 </form>

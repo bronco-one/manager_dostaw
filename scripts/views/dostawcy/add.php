@@ -29,7 +29,7 @@
         <label>Osoba do kontaktu</label><br/>
         <input type="text" name="os_do_kontaktu" placeholder="Wpisz osobę do kontaktu"/>
     </div>
-    <button type="submit" name="submit" class="btn btn-secondary">
+    <button type="submit" name="submit" class="btn btn-success">
         Dodaj
     </button>
 </form>

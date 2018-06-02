@@ -17,7 +17,7 @@
 <td>
     <form action="/gatunekTowaru/updateView" method="post">
         <input type="hidden" name="id" value="<?= $gatunek['id_gat']?>"/>
-        <button type="submit" name="submit" class="btn btn-secondary">
+        <button type="submit" name="submit" class="btn btn-warning">
         Aktualizuj
     </button>
     </form>
@@ -25,7 +25,7 @@
 <td>
     <form action="/gatunekTowaru/delete" method="post">
         <input type="hidden" name="id" value="<?= $gatunek['id_gat']?>"/>
-        <button type="submit" name="submit" class="btn btn-secondary">
+        <button type="submit" name="submit" class="btn btn-danger">
         Usuń
     </button>
     </form>

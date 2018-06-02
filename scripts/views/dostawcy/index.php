@@ -27,7 +27,7 @@
 <td>
     <form action="/dostawcy/updateView" method="post">
         <input type="hidden" name="id" value="<?= $dostawca['id_dostawcy']?>"/>
-        <button type="submit" name="submit" class="btn btn-secondary">
+        <button type="submit" name="submit" class="btn btn-warning">
         Aktualizuj
     </button>
     </form>
@@ -35,7 +35,7 @@
 <td>
     <form action="/dostawcy/delete" method="post">
         <input type="hidden" name="id" value="<?= $dostawca['id_dostawcy']?>"/>
-        <button type="submit" name="submit" class="btn btn-secondary">
+        <button type="submit" name="submit" class="btn btn-danger">
         Usuń
     </button>
     </form>

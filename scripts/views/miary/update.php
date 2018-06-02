@@ -14,7 +14,7 @@
         <label>Nazwa jednostki miary</label><br/>
         <input type="text" name="miara" value="<?= $miara['miara']?>"/>
     </div> 
-    <button type="submit" name="submit" class="btn btn-secondary">
+    <button type="submit" name="submit" class="btn btn-success">
         Aktualizuj
     </button>
 </form>

@@ -42,7 +42,7 @@
         <label>Ustaw alert</label><br/>
         <input type="text" name="alert_sztuki" placeholder="Określ ilość dnii do terminu ważności"/>
     </div>
-    <button type="submit" name="submit" class="btn btn-secondary">
+    <button type="submit" name="submit" class="btn btn-success">
         Dodaj
     </button>
 </form>

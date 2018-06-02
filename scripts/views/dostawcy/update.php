@@ -35,7 +35,7 @@
         <label>Osoba do kontaktu</label><br/>
         <input type="text" name="os_do_kontaktu" value="<?= $dostawcy['os_do_kontaktu']?>"/>
     </div>
-    <button type="submit" name="submit" class="btn btn-secondary">
+    <button type="submit" name="submit" class="btn btn-success">
         Aktualizuj
     </button>
 </form>

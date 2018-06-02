@@ -11,7 +11,7 @@
         <label>Nazwa jednostki miary</label><br/>
         <input type="text" name="miara" placeholder="Wpisz nazwę jednostki"/>
     </div> 
-    <button type="submit" name="submit" class="btn btn-secondary">
+    <button type="submit" name="submit" class="btn btn-success">
         Dodaj
     </button>
 </form>
