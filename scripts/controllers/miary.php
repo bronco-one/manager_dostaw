@@ -28,7 +28,7 @@ class Miary extends Controller {
     }
      public function updateView() {
         $id = $_POST['id'];
-       $this->view->miary = $this->model->viewMiara($id);
+        $this->view->miary = $this->model->viewMiara($id);
         $this->view->render('miary/update'); 
     }
     public function update() {
