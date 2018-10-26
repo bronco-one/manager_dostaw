@@ -91,13 +91,20 @@
                             <a class="dropdown-item" href="/miary/add">Dodaj jednostkę miary</a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <?php if (Session::get("loggedin")): ?>
-                            <?= Session::get("user") . " | " ?>
-                            <a href="../logowanie/logout">Wyloguj</a>
-                        <?php endif; ?>
-                    </li>
                 </ul>
+
+                <div class="list-inline">
+                    <ul class="list-inline">
+                        <?php if (Session::get("loggedin")): ?>
+                            <li class="list-inline-item   label-success">Jesteś zalogowany jako:
+                                <?= Session::get("user") . "  " ?></li>
+                            <li class="list-inline-item"><a href="../logowanie/logout">Wyloguj</a></li>
+                        <?php endif; ?>
+                    </ul>
+                </div>
+
+
+
 
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
