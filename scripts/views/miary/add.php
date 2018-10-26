@@ -10,7 +10,7 @@
 
     <form  class="form-group" action="/miary/add" method="post">
         <div class="form-group row">
-            <label class="col-sm-4 col-form-label">Nazwa jednostki miary</label><br/>
+            <label for="miara" class="col-sm-4 col-form-label">Nazwa jednostki miary</label><br/>
             <div class="col-md-8">
                 <input type="text" class="form-control" name="miara" placeholder="Wpisz nazwę jednostki"/>
             </div>
