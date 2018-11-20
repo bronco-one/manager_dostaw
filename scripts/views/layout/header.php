@@ -89,6 +89,7 @@
                             <a class="dropdown-item" href="#">Ustaw Alert</a>
                             <a class="dropdown-item" href="/miary/index">Pokaż jednostki miar</a>
                             <a class="dropdown-item" href="/miary/add">Dodaj jednostkę miary</a>
+                            <a class="dropdown-item" href="/rejestracja/rejestracja">Zarejestruj użytkownika</a>
                         </div>
                     </li>
                 </ul>

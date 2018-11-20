@@ -14,7 +14,7 @@ class Rejestracja extends Controller {
 
     public function rejestracja() {
         $this->view->rejestracja = $this->model->viewRejestracja();
-        $this->view->render('uzytkownicy/rejestracja');
+        $this->view->render('rejestracja/rejestracja');
     }
 
 }
