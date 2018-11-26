@@ -1,8 +1,17 @@
 <h3 class="text-info temat">Rejestracja</h3>
 <div class="col-sm-8">
 
-    <form action="register-page.php" method="post" onsubmit="return checked()" >
+    <form action="/rejestracja/add" method="post" onsubmit="return checked()" >
         <!-- #2 -->
+        <div class="form-group row">
+            <label for="login" class="col-sm-4 col-form-label">Login:</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" id="login" name="login"
+                       placeholder="Login" maxlength="40" required
+                       value="<?php if (isset($_POST['login'])) echo $_POST['login']; ?>" >
+                <span id='message'>Login może zawierać do 40 znaków.</span>
+            </div>
+        </div>
         <div class="form-group row">
             <label for="first_name" class="col-sm-4 col-form-label">Imię:</label>
             <div class="col-sm-8">
