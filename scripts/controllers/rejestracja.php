@@ -17,4 +17,12 @@ class Rejestracja extends Controller {
         $this->view->render('rejestracja/rejestracja');
     }
 
+    public function add() {
+        if (isset($_POST['submit'])) {
+            unset($_POST['submit']);
+            $this->view->id = $this->model->addUser($_POST);
+        }
+        $this->view->render('rejestracja/komunikat');
+    }
+
 }
