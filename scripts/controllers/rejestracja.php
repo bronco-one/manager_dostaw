@@ -13,7 +13,7 @@ class Rejestracja extends Controller {
     }
 
     public function rejestracja() {
-        $this->view->rejestracja = $this->model->viewRejestracja();
+
         $this->view->render('rejestracja/rejestracja');
     }
 
