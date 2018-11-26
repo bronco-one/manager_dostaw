@@ -13,22 +13,22 @@
             </div>
         </div>
         <div class="form-group row">
-            <label for="first_name" class="col-sm-4 col-form-label">Imię:</label>
+            <label for="imie" class="col-sm-4 col-form-label">Imię:</label>
             <div class="col-sm-8">
-                <input type="text" class="form-control" id="first_name" name="first_name"
+                <input type="text" class="form-control" id="imie" name="imie"
                        placeholder="Imię" maxlength="30" required
-                       value="<?php if (isset($_POST['first_name'])) echo $_POST['first_name']; ?>" >
+                       value="<?php if (isset($_POST['imie'])) echo $_POST['imie']; ?>" >
             </div>
         </div>
 
 
 
         <div class="form-group row">
-            <label for="last_name" class="col-sm-4 col-form-label">Nazwisko:</label>
+            <label for="nazwisko" class="col-sm-4 col-form-label">Nazwisko:</label>
             <div class="col-sm-8">
-                <input type="text" class="form-control" id="last_name" name="last_name"
+                <input type="text" class="form-control" id="nazwisko" name="nazwisko"
                        placeholder="Nazwisko" maxlength="40" required
-                       value="<?php if (isset($_POST['last_name'])) echo $_POST['last_name']; ?>">
+                       value="<?php if (isset($_POST['nazwisko'])) echo $_POST['nazwisko']; ?>">
             </div>
         </div>
         <div class="form-group row">
@@ -40,20 +40,20 @@
             </div>
         </div>
         <div class="form-group row">
-            <label for="password1" class="col-sm-4 col-form-label">Hasło:</label>
+            <label for="haslo" class="col-sm-4 col-form-label">Hasło:</label>
             <div class="col-sm-8">
-                <input type="password" class="form-control" id="password1" name="password1"
+                <input type="password" class="form-control" id="haslo" name="haslo"
                        placeholder="Hasło" minlength="8" maxlength="12"
-                       required value="<?php if (isset($_POST['password1'])) echo $_POST['password1']; ?>">
+                       required value="<?php if (isset($_POST['haslo'])) echo $_POST['haslo']; ?>">
                 <span id='message'>Hasło powinno zawierać od 8 do 12 znaków.</span>
             </div>
         </div>
         <div class="form-group row">
-            <label for="password2" class="col-sm-4 col-form-label">Powtórz hasło:</label>
+            <label for="haslo2" class="col-sm-4 col-form-label">Powtórz hasło:</label>
             <div class="col-sm-8">
-                <input type="password" class="form-control" id="password2" name="password2"
+                <input type="password" class="form-control" id="haslo2" name="haslo2"
                        placeholder="Powtórz hasło" minlength="8" maxlength="12" required
-                       value="<?php if (isset($_POST['password2'])) echo $_POST['password2']; ?>">
+                       value="<?php if (isset($_POST['haslo2'])) echo $_POST['haslo2']; ?>">
             </div>
         </div>
         <div class="form-group row">
