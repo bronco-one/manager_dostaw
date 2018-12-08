@@ -20,6 +20,10 @@ class Rejestracja extends Controller {
     public function add() {
         if (isset($_POST['submit'])) {
             unset($_POST['submit']);
+            if ($_POST['haslo'] == $_POST['haslo2']) {
+                unset($_POST['haslo2']);
+                $_POST['haslo'] = password_hash($_POST['haslo'], PASSWORD_DEFAULT);
+            }
             $this->view->id = $this->model->addUser($_POST);
         }
         $this->view->render('rejestracja/komunikat');
