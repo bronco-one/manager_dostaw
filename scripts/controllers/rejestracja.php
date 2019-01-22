@@ -2,6 +2,8 @@
 
 class Rejestracja extends Controller {
 
+    public $msg;
+
     public function __construct() {
         parent::__construct();
         Session::init();
@@ -30,14 +32,21 @@ class Rejestracja extends Controller {
                     $_POST = $this->validate->htmlTags($_POST);
                     $_POST['haslo'] = password_hash($_POST['haslo'], PASSWORD_DEFAULT);
 
-                    $this->view->id = $this->model->addUser($_POST);
+                    if ($this->view->id = $this->model->addUser($_POST)) {
+                        $msg = 'Dodano nowego użytkownika';
+                        $this->komunikat($msg);
+                    }
                 } else {
                     $msg = 'Hasła nie są identyczne';
-                    $this->view->render('rejestracja/komunikat');
+                    $this->komunikat($msg);
                 }
             }
         }
-        $this->view->render('rejestracja/komunikat');
+    }
+
+    public function komunikat($param) {
+        //$this->msg = $param;
+        header("Location: /rejestracja/komunikat/get?message=nie jest ok");
     }
 
 }

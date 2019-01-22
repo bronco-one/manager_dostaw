@@ -1,8 +1,9 @@
 
 <div>
     <footer class="row jumbotron" style="margin-top:50px">
+    
         <div class="col-md-2">
-            <img src="imgs/logo.png" class="img-responsive">
+            <img src="../img/studio.gif" class="img-responsive">
         </div>
         <div class="col-md-7">
             <ul class="list-inline list-unstyled">
@@ -12,12 +13,14 @@
         </div>
         <div class="col-md-3">
             <address>
-                <strong>Bronco Studio, Inc.</strong><br>
+                <strong>Bronco Studio </strong><br>
                 Wrocław<br>
 
                 <abbr title="Telefon">Tel:</abbr> (71) 456-7890
             </address>
         </div>
+        
+        </footer>
 </div>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <h3 class="text-info temat">Rejestracja</h3>
 <div class="col-sm-8">
-
+    <?= $msg ?>
     <form action="/rejestracja/add" method="post" onsubmit="return checked()" >
         <!-- #2 -->
         <div class="form-group row">
