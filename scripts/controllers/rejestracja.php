@@ -21,7 +21,7 @@ class Rejestracja extends Controller {
     public function add() {
         if (isset($_POST['submit'])) {
             unset($_POST['submit']);
-
+			if(Session::get('rola') =='admin') {
             if ($this->validate->formEmpty($_POST)) {
                 echo 'Formularz niepoprawny';
             } else {
@@ -34,18 +34,23 @@ class Rejestracja extends Controller {
                     if ($this->view->id = $this->model->addUser($_POST)) {
                         $msg = 'Dodano nowego użytkownika';
                         $this->komunikat($msg);
+                        $this->view->render('rejestracja/komunikat');
                     }
                 } else {
                     $msg = 'Hasła nie są identyczne';
                     $this->komunikat($msg);
                 }
             }
+        }else {
+        	$this->view->render('rejestracja/rejestracja');
         }
+        
+    }
     }
 
     public function komunikat($param) {
         //$this->msg = $param;
-        header("Location: /rejestracja/komunikat/get?message=nie jest ok");
+       
     }
 
 }

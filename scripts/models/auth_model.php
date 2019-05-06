@@ -8,7 +8,7 @@ class Auth_Model extends Model {
 
     public function login($user, $pass) {
 		Session::destroy();
-        $sql = "SELECT imie, haslo FROM uzytkownicy WHERE login = :user ";
+        $sql = "SELECT imie, haslo, rola FROM uzytkownicy WHERE login = :user ";
         $stmt = $this->db->prepare($sql);
 
         $stmt->execute([':user' => $user]);
@@ -18,6 +18,7 @@ class Auth_Model extends Model {
 			Session::init();
             Session::set('loggedin', true);
             Session::set('user', $user);
+            Session::set('rola', $data['rola']);
             header('Location:/dostawcy/index');
             //$stmt->close();
         } else {

@@ -56,6 +56,16 @@
                        value="<?php if (isset($_POST['haslo2'])) echo $_POST['haslo2']; ?>">
             </div>
         </div>
+         <div class="form-group row">
+            <label for="rola" class="col-sm-4 col-form-label">Rola:</label>
+            <div class="col-sm-8">
+				<select class="form-control" name="rola" id="rola">
+					<option value="<?php echo $_POST['rola'] ='admin' ?>">Administrator</option>
+					<option value="<?php echo $_POST['rola'] ='user' ?>">Użytkownik</option>
+				</select>
+                
+            </div>
+        </div>
         <div class="form-group row">
             <div class="col-sm-12">
                 <input id="submit" class="btn btn-success" type="submit" name="submit"
