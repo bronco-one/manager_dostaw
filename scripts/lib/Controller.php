@@ -1,10 +1,12 @@
 <?php
 
 abstract class Controller {
-
+    
     public function __construct() {
         $this->view = new View();
         $this->validate = new Validate();
+        Session::init();
+        
     }
 
     public function loadModel($name) {

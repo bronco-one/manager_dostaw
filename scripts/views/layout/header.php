@@ -38,6 +38,12 @@
                 padding: 3rem 1.5rem;
                 text-align: center;
             }
+            .border1{
+            padding-left:60px;
+            padding-top:5px;
+            color:green;
+            font-size:18px;
+            }
         </style>
     </head>
     <body>
@@ -92,17 +98,18 @@
                             <a class="dropdown-item" href="/rejestracja/rejestracja">Zarejestruj użytkownika</a>
                         </div>
                     </li>
-                </ul>
+                
 
-                <div class="list-inline">
-                    <ul class="list-inline">
+                       <div class="nav-item border1">
+                    
                         <?php if (Session::get("loggedin")): ?>
-                            <li class="list-inline-item   label-success">Jesteś zalogowany jako:
+                            <li class="nav-item list-inline-item  label-success">Jesteś zalogowany jako:
                                 <?= Session::get("user") . "  " ?></li>
                             <li class="list-inline-item"><a href="../logowanie/logout">Wyloguj</a></li>
                         <?php endif; ?>
-                    </ul>
-                </div>
+                    
+                       </div>
+                </ul>
 
 
 

@@ -4,7 +4,6 @@ class Logowanie extends Controller {
 
     public function __construct() {
         parent::__construct();
-        Session::init();
         $this->loadModel('auth');
     }
 

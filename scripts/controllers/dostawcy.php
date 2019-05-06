@@ -4,7 +4,6 @@ class Dostawcy extends Controller {
 
     public function __construct() {
         parent::__construct();
-        Session::init();
         if (Session::get('loggedin')){
         $this->loadModel("dostawcy");
         } else {
