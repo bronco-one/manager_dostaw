@@ -19,11 +19,11 @@ class Auth_Model extends Model {
             Session::set('loggedin', true);
             Session::set('user', $user);
             Session::set('rola', $data['rola']);
-            header('Location:/dostawcy/index');
-            //$stmt->close();
+            
+            return true;
         } else {
-            header('Location:/logowanie/logowanie'); //?message='.urlencode('Błąd logowania'));
-            // $stmt->close();
+          
+            return false;
         }
     }
 
