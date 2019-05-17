@@ -2,7 +2,7 @@
 
 <div class="col-sm-8">
     <h2 class="h2 text-center">Zmień Hasło</h2>
-    <form action="/rejestracja/zmien-haslo" method="post" name="regform" id="regform" onsubmit="return checked();">
+    <form action="/zmienHaslo/index" method="post" name="regform" id="regform" onsubmit="return checked();">
         <div class="form-group row">
             <label for="email" class="col-sm-4 col-form-label">E-mail:</label>
             <div class="col-sm-8">

@@ -9,13 +9,14 @@ class Validate {
     public function formEmpty($param) {
         foreach ($param as $key => $value) {
             if (strlen($value) <= 0) {
-                $error = true;
-                break;
+               return $error = true;
+                
             } else {
-                $error = false;
+            
+               return $error = false;
             }
         }
-        return $error;
+        
     }
 
     public function htmlTags($param) {

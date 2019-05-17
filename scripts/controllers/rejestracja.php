@@ -20,6 +20,7 @@ class Rejestracja extends Controller {
 
     public function add() {
         if (isset($_POST['submit'])) {
+			
             unset($_POST['submit']);
 			if(Session::get('rola') =='admin') {
             if ($this->validate->formEmpty($_POST)) {
