@@ -1,7 +1,7 @@
 
-
+<h3 class="text-info temat">Zmień Hasło</h3>
 <div class="col-sm-8">
-    <h2 class="h2 text-center">Zmień Hasło</h2>
+    
     <form action="/zmienHaslo/index" method="post" name="regform" id="regform" onsubmit="return checked();">
         <div class="form-group row">
             <label for="email" class="col-sm-4 col-form-label">E-mail:</label>
@@ -42,7 +42,7 @@
         </div>
         <div class="form-group row">
             <div class="col-sm-12">
-                <input id="submit" class="btn btn-primary" type="submit" name="submit"
+                <input id="submit" class="btn btn-success" type="submit" name="submit"
                        value="Change Password">
             </div>
         </div>
