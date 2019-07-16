@@ -18,6 +18,12 @@ class Validate {
         }
         
     }
+     public function filterString($param) {
+        foreach ($param as $key => $value) {
+            $param[$key] = filter_var($value, FILTER_SANITIZE_STRING);
+        }
+        return $param;
+    }
 
     public function htmlTags($param) {
         foreach ($param as $key => $value) {
