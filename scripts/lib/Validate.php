@@ -25,18 +25,6 @@ class Validate {
         return $param;
     }
 
-    public function htmlTags($param) {
-        foreach ($param as $key => $value) {
-            $param[$key] = strip_tags($value);
-        }
-        return $param;
-    }
-
-    public function dataTrim($param) {
-        foreach ($param as $key => $value) {
-            $param[$key] = trim($value);
-        }
-        return $param;
-    }
+   
 
 }

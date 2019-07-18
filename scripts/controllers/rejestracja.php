@@ -28,8 +28,7 @@ class Rejestracja extends Controller {
             } else {
                 if ($_POST['haslo'] == $_POST['haslo2']) {
                     unset($_POST['haslo2']);
-                    $_POST = $this->validate->dataTrim($_POST);
-                    $_POST = $this->validate->htmlTags($_POST);
+                    $_POST = $this->validate->filterString($_POST);
                     $_POST['haslo'] = password_hash($_POST['haslo'], PASSWORD_DEFAULT);
 
                     if ($this->view->id = $this->model->addUser($_POST)) {

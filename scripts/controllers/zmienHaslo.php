@@ -20,8 +20,7 @@ class ZmienHaslo extends Controller {
 			 $this->error = 'Formularz wypełniony niepoprawnie!';
 			 $this->view->render('zmienHaslo/index');
 			}else {
-				$_POST = $this->validate->dataTrim($_POST);
-				$_POST = $this->validate->htmlTags($_POST);
+				$_POST = $this->validate->filterString($_POST);
 				$user = Session::get('user');
 				$email = $_POST['email'];
 				$pass = $_POST['password'];
