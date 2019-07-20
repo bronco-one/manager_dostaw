@@ -26,7 +26,7 @@ class Validate {
     }
 
    public function filterEmail($param){
-		return $email = filte_var($param, FILTER_SANITIZE_EMAIL);
+		return $email = filte_var($param, FILTER_VALIDATE_EMAIL);
     
    }
 
