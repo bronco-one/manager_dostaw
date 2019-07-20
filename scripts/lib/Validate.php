@@ -2,6 +2,8 @@
 
 class Validate {
 
+	$errors = array();
+	
     public function __construct() {
 
     }
@@ -26,7 +28,14 @@ class Validate {
     }
 
    public function filterEmail($param){
-		return $email = filte_var($param, FILTER_VALIDATE_EMAIL);
+		 $email = filte_var($param, FILTER_SANITIZE_EMAIL);
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    	$errors[] ='Adres email jest nieprawidłowy!';
+    }else {
+    	return $email;
+    	
+    }
+    
     
    }
 
