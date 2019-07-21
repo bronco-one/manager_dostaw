@@ -28,7 +28,7 @@ class Validate {
     }
 
    public function filterEmail($param){
-		 $email = filte_var($param, FILTER_SANITIZE_EMAIL);
+		 $email = filter_var($param, FILTER_SANITIZE_EMAIL);
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     	$errors[] ='Adres email jest nieprawidłowy!';
     }else {
