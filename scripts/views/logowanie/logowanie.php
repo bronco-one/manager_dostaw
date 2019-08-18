@@ -1,6 +1,8 @@
 <h3 class="text-info temat">Logowanie</h3>
 
-<p><?php echo $this->message; ?></p>
+<p><?php //foreach($er as $e){
+    //echo $e.'<br/>';
+//}?></p>
 <div class="col-md-8">
     <form class="form-group" action="/logowanie/logowanie" method="post">
         <p>

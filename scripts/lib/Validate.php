@@ -11,12 +11,15 @@ class Validate {
     public function formEmpty($param) {
         foreach ($param as $key => $value) {
             if (strlen($value) <= 0) {
-               return $error = true;
+               $this->errors[]='Pole '.$key.' nie zostało wypełnione.';
                 
-            } else {
+            } 
+        }
+        if(empty($this->errors)){
+            return true;
             
-               return $error = false;
-            }
+        }else{
+            return false;
         }
         
     }

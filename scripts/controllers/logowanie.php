@@ -8,13 +8,12 @@ class Logowanie extends Controller {
     }
 
     public function index() {
-        $user = Session::get('user');
-        $this->view->user = $user ? $user : '';
-        $this->view->message = isset($_GET['message']) ? $_GET['message'] : '';
+       
         $this->view->render("logowanie/logowanie");
     }
 
     public function logowanie() {
+        if($this->validate->formEmpty($_POST)){
         $user = $_POST['user'];
         $pass = $_POST['pass'];
         if($this->model->login($user, $pass)){
@@ -22,11 +21,17 @@ class Logowanie extends Controller {
         }else{
 			$this->view->render("logowanie/logowanie");
         }
+        }else{
+         //$er = $this->validate->errors; 
+         $this->view->render("logowanie/logowanie");
+        // header('Location:logowanie/logowanie');
+        }
     }
 
     public function logout() {
         Session::destroy();
-        $this->view->render("logowanie/logowanie");
+        //$this->view->render("logowanie/logowanie");
+        header('Location:logowanie/logowanie');
     }
 
 }
