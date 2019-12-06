@@ -69,13 +69,13 @@
                         <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dostawy</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
                             <a class="dropdown-item" href="<?= BASE_URL.'/dostawy/index'?>">Szukaj</a>
-                            <a class="dropdown-item" href="<?= BASE_URL.'/dostawy/add'?>">Dodaj dostawę</a>
+                            <a class="dropdown-item" href="/dostawy/add">Dodaj dostawę</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Asortyment</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item" href="<?= BASE_URL.'/artykuly/index'?>">Spis artykułów</a>
+                            <a class="dropdown-item" href="/artykuly/index">Spis artykułów</a>
                             <a class="dropdown-item" href="<?= BASE_URL.'/gatunekTowaru/index'?>">Spis rodzaj asortymentu</a>
                             <a class="dropdown-item" href="<?= BASE_URL.'/gatunekTowaru/add'?>">Dodaj gatunek asortymentu</a>
                             <a class="dropdown-item" href="<?= BASE_URL.'/artykuly/add'?>">Dodaj produkt</a>

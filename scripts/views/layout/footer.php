@@ -3,7 +3,7 @@
     <footer class="row jumbotron" style="margin-top:50px">
     
         <div class="col-md-2">
-            <img src="<?= BASE_URL.'/../img/studio.gif' ?>" class="img-responsive">
+            <img src="<?= BASE_URL.'../img/studio.gif' ?>" class="img-responsive">
         </div>
         <div class="col-md-7">
             <ul class="list-inline list-unstyled">
