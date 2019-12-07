@@ -17,7 +17,7 @@ class Logowanie extends Controller {
         $user = $_POST['user'];
         $pass = $_POST['pass'];
         if($this->model->login($user, $pass)){
-				header('Location:/dostawcy/index');
+			$this->view->render("zadania/index");
         }else{
 			$this->view->render("logowanie/logowanie");
         }

@@ -18,6 +18,7 @@ class Auth_Model extends Model {
 			Session::init();
             Session::set('loggedin', true);
             Session::set('user', $user);
+            Session::set('id_user', $data['id_user']);
             Session::set('rola', $data['rola']);
             
             return true;
