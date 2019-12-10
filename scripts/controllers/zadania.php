@@ -1,18 +1,23 @@
 <?php
 class Zadania extends Controller {
-
+	public $id;
     public function __construct() {
         parent::__construct();
         if (Session::get('loggedin')){
-       // $this->loadModel("zadania");
-       // $id = Session::get("id_user");
-        //$zadania = $this->model->zadania($id);
+        $this->id = Session::get("id_user");
+        $this->loadModel("zadania");
         
-        $this->view->render('zadania/index');
         
         } else {
             header("Location: http://hurtownia.local");
            
+        }
+	}
+        public function index(){
+		
+        $this->view->zadania = $this->model->viewZadania($this->id);
+        
+        $this->view->render('zadania/index');
         }
         
     }

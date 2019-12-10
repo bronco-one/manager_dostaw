@@ -84,7 +84,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Zadania</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item" href="<?= BASE_URL.'/dostawcy/index'?>">Spis</a>
+                            <a class="dropdown-item" href="/zadania/index">Spis</a>
                             <a class="dropdown-item" href="#">Another action</a>
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
@@ -93,7 +93,7 @@
                         <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inne</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
                             <a class="dropdown-item" href="#">Ustaw Alert</a>
-                            <a class="dropdown-item" href="<?= BASE_URL.'/miary/index'?>">Pokaż jednostki miar</a>
+                            <a class="dropdown-item" href="/miary/index">Pokaż jednostki miar</a>
                             <a class="dropdown-item" href="<?= BASE_URL.'/miary/add'?>">Dodaj jednostkę miary</a>
                             <a class="dropdown-item" href="<?= BASE_URL.'/rejestracja/rejestracja'?>">Zarejestruj użytkownika</a>
                             <a class="dropdown-item" href="<?= BASE_URL.'/zmienHaslo/index'?>">Zmień Hasło</a>

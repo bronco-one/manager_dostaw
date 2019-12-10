@@ -8,7 +8,7 @@ class Auth_Model extends Model {
 
     public function login($user, $pass) {
 		Session::destroy();
-        $sql = "SELECT imie, haslo, rola FROM uzytkownicy WHERE login = :user ";
+        $sql = "SELECT id_user,login, haslo, rola FROM uzytkownicy WHERE login = :user ";
         $stmt = $this->db->prepare($sql);
 
         $stmt->execute([':user' => $user]);
