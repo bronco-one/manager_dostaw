@@ -1,13 +1,13 @@
-<?php 
-error_reporting(e_all);
+<?php
+error_reporting(E_ALL);
 ini_set('display_errors',1);
 
-require_once 'lib/Config.php';
+require_once 'lib/config.php';
 
-function __autoload($class) {
-	require LIBRARY.$class.'.php';
-	
+function my_autoload($class) {
+	include(LIBRARY.$class.'.php');
+
 }
+spl_autoload_register('my_autoload');
 
 $app = new Bootstrap();
-
