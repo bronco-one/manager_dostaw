@@ -8,7 +8,7 @@ class Logowanie extends Controller {
     }
 
     public function index() {
-       
+
         $this->view->render("logowanie/logowanie");
     }
 
@@ -18,14 +18,14 @@ class Logowanie extends Controller {
         $pass = $_POST['pass'];
         if($this->model->login($user, $pass)){
         header('Location: ../zadania/index');
-			
+
         }else{
-			$this->view->render("logowanie/logowanie");
+			  $this->view->render("logowanie/logowanie");
         }
         }else{
-         //$er = $this->validate->errors; 
+
          $this->view->render("logowanie/logowanie");
-        // header('Location:logowanie/logowanie');
+        
         }
     }
 

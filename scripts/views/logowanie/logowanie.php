@@ -1,8 +1,6 @@
 <h3 class="text-info temat">Logowanie</h3>
 
-<p><?php //foreach($er as $e){
-    //echo $e.'<br/>';
-//}?></p>
+<p></p>
 <div class="col-md-8">
     <form class="form-group" action="/logowanie/logowanie" method="post">
         <p>
@@ -26,4 +24,3 @@
         </p>
     </form>
 </div>
-
