@@ -2,8 +2,9 @@
 
 class Bootstrap{
 	public function __construct(){
+		if(isset($_GET['url'])){
 	$url = $_GET['url'];
-
+var_dump($url);
 	$url = explode("/",$url);
 		if (empty($url[0])) {
 			require_once("controllers/logowanie.php");
@@ -36,9 +37,10 @@ class Bootstrap{
 
 
 		}
-		else {
-			echo 'Szukana ajcja nie istnieje';
-
+	}else {
+		require_once("controllers/logowanie.php");
+		(new Logowanie())->index();
+		return false;
 		}
 
 
